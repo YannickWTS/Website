@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tack-IT - IT Oplossingen, Websites & SEO</title>
+    <meta name="description"
+        content="Tack-IT helpt bij al uw IT-problemen. Van applicatieontwikkeling en websites bouwen tot SEO-optimalisatie. Professional en betrouwbaar.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo-Icon.svg">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tackit.be/">
+    <meta property="og:title" content="Tack-IT - IT Oplossingen, Websites & SEO">
+    <meta property="og:description"
+        content="Tack-IT helpt bij al uw IT-problemen. Van applicatieontwikkeling en websites bouwen tot SEO-optimalisatie. Professional en betrouwbaar.">
+    <meta property="og:image" content="assets/logo-full.svg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Tack-IT",
+      "image": "assets/logo-full.svg",
+      "description": "Tack-IT helpt bij al uw IT-problemen. Van applicatieontwikkeling en websites bouwen tot SEO-optimalisatie.",
+      "email": "contact@tackit.be",
+      "url": "https://tackit.be/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BE"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <a href="#home" class="logo">
+                <img src="assets/logo-Icon.svg" alt="Tack-IT Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Diensten</a></li>
+                <li><a href="#about">Over Ons</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="container hero-content">
+            <img src="assets/logo-full.svg" alt="Tack-IT" class="hero-logo">
+            <p>Uw partner voor IT-oplossingen, van applicatieontwikkeling tot SEO-geoptimaliseerde websites.</p>
+            <a href="#contact" class="btn">Neem Contact Op</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2>Onze Diensten</h2>
+            <div class="services-grid">
+                <!-- Service 1: IT Problemen -->
+                <div class="card">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>IT Support</h3>
+                    <p>Heeft u computerproblemen of netwerkstoringen? Wij lossen al uw hardware- en softwareproblemen
+                        vakkundig op.</p>
+                </div>
+
+                <!-- Service 2: Websites -->
+                <div class="card">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Websites Bouwen</h3>
+                    <p>Moderne, responsieve websites op maat gemaakt. Wij zorgen voor een professionele online
+                        aanwezigheid die indruk maakt.</p>
+                </div>
+
+                <!-- Service 3: SEO -->
+                <div class="card">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                            <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                        </svg>
+                    </div>
+                    <h3>SEO Optimalisatie</h3>
+                    <p>Beter gevonden worden in Google? Wij optimaliseren uw website voor zoekmachines zodat klanten u
+                        weten te vinden.</p>
+                </div>
+
+                <!-- Service 4: Apps -->
+                <div class="card">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Applicatie Ontwikkeling</h3>
+                    <p>Maatwerk software nodig? Van web apps tot mobiele applicaties, wij bouwen de digitale tools die
+                        uw bedrijf nodig heeft.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-intro">
+                <h2>Waarom Tack-IT bestaat</h2>
+                <p class="lead-text">Stel je een wereld voor waarin technologie niet wordt verkocht, maar gebouwd. Niet
+                    om zoveel mogelijk te verdienen, maar om zoveel mogelijk te helpen.</p>
+                <p>Tack-IT is ontstaan vanuit een eenvoudige overtuiging: <strong>De wereld heeft geen extra verkopers
+                        nodig, maar bouwers en helpers.</strong></p>
+                <p>Wij geloven niet in snelle deals, opgeblazen beloftes of oplossingen die vooral goed klinken in een
+                    offerte. Wij geloven in technologie die ontstaat uit betrokkenheid, verantwoordelijkheid en
+                    vakmanschap.</p>
+            </div>
+
+            <div class="about-highlight">
+                <h3>Built to make a difference</h3>
+                <p>"Built to make a difference" betekent voor ons niet dat alles groots of revolutionair moet zijn. Het
+                    betekent dat wat we bouwen, ertoe doet.</p>
+                <div class="highlight-grid">
+                    <div class="highlight-item">Een systeem dat iemand tijd teruggeeft.</div>
+                    <div class="highlight-item">Een applicatie die frustratie wegneemt.</div>
+                    <div class="highlight-item">Een oplossing die vandaag werkt én morgen nog steeds klopt.</div>
+                </div>
+                <p class="small-text">Het verschil zit vaak niet in wat zichtbaar is, maar in wat stil en betrouwbaar
+                    zijn werk doet.</p>
+            </div>
+
+            <h3 class="values-title">Onze kernwaarden</h3>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🧱</div>
+                    <h4>We bouwen, we verkopen niet</h4>
+                    <p>Wij starten geen projecten om iets te slijten. We starten omdat er een probleem is dat beter kan.
+                        Als iets geen echte meerwaarde heeft, zeggen we dat ook.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h4>We helpen, niet overtuigen</h4>
+                    <p>Samenwerken betekent voor ons: naast u staan. Meedenken, uitleggen, bijsturen. Geen ingewikkelde
+                        taal om slimmer te lijken. Echte hulp voelt rustig, helder en eerlijk.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🔐</div>
+                    <h4>Verantwoordelijkheid boven alles</h4>
+                    <p>Wat wij bouwen, kan impact hebben op mensen, gegevens en processen. Beveiliging, stabiliteit en
+                        privacy zijn geen extra opties, maar fundamentele keuzes.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌱</div>
+                    <h4>Duurzaam denken</h4>
+                    <p>Wij bouwen niet voor vandaag alleen. Schaalbare oplossingen, onderhoudbare code. Minder
+                        weggooien. Meer blijven gebruiken.</p>
+                </div>
+            </div>
+
+            <div class="about-conclusion-grid">
+                <div class="audience">
+                    <h3>Voor wie wij bouwen</h3>
+                    <ul>
+                        <li>Mensen die verder kijken dan de korte termijn</li>
+                        <li>Waarde hechten aan eerlijkheid en kwaliteit</li>
+                        <li>Technologie willen die hen ondersteunt, niet beheerst</li>
+                    </ul>
+                    <p><strong>Niet voor iedereen. Maar precies voor de juiste mensen.</strong></p>
+                </div>
+                <div class="conclusion">
+                    <h3>Tot slot</h3>
+                    <p>Tack-IT is geen merk dat iets wil verkopen. Het is een overtuiging die iets wil bouwen. Met zorg.
+                        Met aandacht. En altijd met de vraag:</p>
+                    <p class="final-question">Helpt dit echt?</p>
+                    <p>Als het antwoord ja is, dan bouwen we. Als het nee is, dan zoeken we verder.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Start uw Project</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Klaar om uw digitale ambities waar te maken? Neem vandaag nog contact op voor een vrijblijvend
+                        gesprek.</p>
+
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>contact@tackit.be</span>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <!-- CHANGE ACTION URL: Vervang de link hieronder met je eigen Formspree link -->
+                    <form action="https://formspree.io/f/xbdkyajw" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Uw Naam" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Uw Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Waar kunnen we u mee helpen?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn"
+                            style="background: white; color: var(--accent-color);">Verstuur Bericht</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Tack-IT. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
