@@ -183,31 +183,20 @@ header {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, #dbe6f6 0%, #c5d7f2 100%);
-    /* Slightly darker/richer than before */
+    /* Combine clear background with a subtle radial light source */
+    background:
+        radial-gradient(circle at 80% 20%, rgba(26, 79, 156, 0.08) 0%, transparent 60%),
+        linear-gradient(135deg, #dbe6f6 0%, #c5d7f2 100%);
     display: flex;
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    /* Dark text for contrast */
     padding-top: 80px;
     position: relative;
     overflow: hidden;
 }
 
-/* Abstract Background Shapes */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: -10%;
-    right: -10%;
-    width: 50%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(26, 79, 156, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
-    /* Subtle blue tint */
-    border-radius: 50%;
-    z-index: 0;
-}
+/* Canvas Background (Interactive particles) */
 
 #hero-canvas {
     position: absolute;
