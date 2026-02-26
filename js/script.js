@@ -89,17 +89,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 let dy = mouse.y - this.y;
                 let distance = Math.sqrt(dx * dx + dy * dy);
 
-                // Interaction: Run away from mouse
-                const forceDirectionX = dx / distance;
-                const forceDirectionY = dy / distance;
+                // Interaction: Run away from mouse (Disabled on mobile < 768px)
+                const isMobile = window.innerWidth < 768;
                 const maxDistance = 150;
-                const force = (maxDistance - distance) / maxDistance;
-                const directionX = forceDirectionX * force * 5; // Multiplier defines push strength
-                const directionY = forceDirectionY * force * 5;
 
-                if (distance < maxDistance) {
-                    this.x -= directionX;
-                    this.y -= directionY;
+                if (distance < maxDistance && !isMobile && mouse.x !== undefined && mouse.y !== undefined) {
+                    const forceDirectionX = dx / distance;
+                    const forceDirectionY = dy / distance;
+                    const force = (maxDistance - distance) / maxDistance;
+                    const pushStrength = 5;
+
+                    this.x -= forceDirectionX * force * pushStrength;
+                    this.y -= forceDirectionY * force * pushStrength;
                 } else {
                     // Normalize movement slightly to original path if not pushed
                     this.x += this.directionX;
