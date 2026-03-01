@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tack-IT - IT Oplossingen, Websites & SEO</title>
+    <title>Tack-IT - Webdesign & IT Support in Zele | Regio Dendermonde & Lokeren</title>
     <meta name="description"
-        content="Tack-IT helpt bij al uw IT-problemen. Van applicatieontwikkeling en websites bouwen tot SEO-optimalisatie. Professional en betrouwbaar.">
+        content="Tack-IT uit Zele helpt zelfstandigen en KMO's met webdesign, IT support en SEO in regio Dendermonde, Lokeren, Sint-Niklaas en Wetteren. Persoonlijk, lokaal en professioneel.">
+    <link rel="canonical" href="https://tackit.be/">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,28 +23,36 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tackit.be/">
-    <meta property="og:title" content="Tack-IT - IT Oplossingen, Websites & SEO">
+    <meta property="og:title" content="Tack-IT - Webdesign & IT Support in Zele | Regio Dendermonde & Lokeren">
     <meta property="og:description"
         content="Tack-IT helpt bij al uw IT-problemen. Van applicatieontwikkeling en websites bouwen tot SEO-optimalisatie. Professional en betrouwbaar.">
     <meta property="og:image" content="https://tackit.be/assets/logo-full.png">
 
+    <!-- Local Meta-->
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="BE-VOV">
+    <meta name="geo.placename" content="Zele">
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Tack-IT",
-      "image": "https://tackit.be/assets/logo-full.png",
-      "description": "Tack-IT helpt bij al uw IT-problemen. Van applicatieontwikkeling en websites bouwen tot SEO-optimalisatie.",
-      "email": "contact@tackit.be",
-      "url": "https://tackit.be/",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Kouterstraat 154/3",
-        "addressLocality": "Zele",
-        "postalCode": "9240",
-        "addressCountry": "BE"
-      }
+        "@context": "https://schema.org",
+        "@type": ["ProfessionalService", "WebDesignCompany"],
+        "name": "Tack-IT",
+        "image": "https://tackit.be/assets/logo-full.png",
+        "description": "Tack-IT helpt bij al uw IT-problemen. Van applicatieontwikkeling en websites bouwen tot SEO-optimalisatie.",
+        "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Zele, Dendermonde, Lokeren, Sint-Niklaas, Wetteren"
+        },
+        "email": "contact@tackit.be",
+        "url": "https://tackit.be/",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kouterstraat 154/3",
+            "addressLocality": "Zele",
+            "postalCode": "9240",
+            "addressCountry": "BE"
+        }
     }
     </script>
 
@@ -63,6 +72,7 @@
                 <li><a href="#services">Diensten</a></li>
                 <li><a href="#about">Over ons</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#regions">Regio</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -76,8 +86,9 @@
     <section id="home" class="hero">
         <canvas id="hero-canvas"></canvas>
         <div class="container hero-content">
-            <img src="assets/logo-full.svg" alt="Tack-IT" class="hero-logo">
-            <p>Uw partner voor IT-oplossingen, van applicatieontwikkeling tot SEO-geoptimaliseerde websites.</p>
+            <img src="assets/logo-full.svg" alt="Tack-IT - Webdesign en IT Support in Zele" class="hero-logo">
+            <h1>Webdesign en IT Support voor ondernemers in en rond Zele</h1>
+            <p>Geen verkooppraat. Gewoon degelijke websites en IT-oplossingen die werken.</p>
             <a href="#contact" class="btn">Neem contact op</a>
         </div>
     </section>
@@ -88,7 +99,7 @@
             <h2>Onze diensten</h2>
             <div class="services-grid">
                 <!-- Service 1: IT Problemen -->
-                <div class="card">
+                <div class="card" id="it-support-zele">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -97,13 +108,13 @@
                             <line x1="12" y1="17" x2="12" y2="21"></line>
                         </svg>
                     </div>
-                    <h3>IT-support</h3>
+                    <h3>IT-support in Zele</h3>
                     <p>Heeft u computerproblemen of netwerkstoringen? Wij lossen al uw hardware- en softwareproblemen
                         vakkundig op.</p>
                 </div>
 
                 <!-- Service 2: Websites -->
-                <div class="card">
+                <div class="card" id="webdesign-zele">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -114,13 +125,13 @@
                             </path>
                         </svg>
                     </div>
-                    <h3>Website bouwen</h3>
+                    <h3>Website laten maken in Zele</h3>
                     <p>Moderne, responsieve websites op maat gemaakt. Wij zorgen voor een professionele online
                         aanwezigheid die indruk maakt.</p>
                 </div>
 
                 <!-- Service 3: SEO -->
-                <div class="card">
+                <div class="card" id="seo-zele">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -128,13 +139,13 @@
                             <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
                         </svg>
                     </div>
-                    <h3>SEO-optimalisatie</h3>
+                    <h3>SEO-optimalisatie regio Dendermonde</h3>
                     <p>Beter gevonden worden online? Wij optimaliseren uw website voor zoekmachines zodat klanten u
                         weten te vinden.</p>
                 </div>
 
                 <!-- Service 4: Apps -->
-                <div class="card">
+                <div class="card" id="applicatieontwikkeling">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -222,6 +233,24 @@
                     </div>
                 </div>
             </div>
+    </section>
+
+    <!-- Regions Section -->
+    <section id="regions" class="regions">
+        <div class="container">
+            <h2>Actief in uw regio</h2>
+            <div class="tag-container">
+                <span class="tag">Zele</span>
+                <span class="tag">Dendermonde</span>
+                <span class="tag">Berlare</span>
+                <span class="tag">Lokeren</span>
+                <span class="tag">Hamme</span>
+                <span class="tag">Wetteren</span>
+                <span class="tag">Sint-Niklaas</span>
+                <span class="tag">Aalst</span>
+            </div>
+            <p class="regions-subtext">en omliggende gemeentes</p>
+        </div>
     </section>
 
     <!-- Contact Section -->
